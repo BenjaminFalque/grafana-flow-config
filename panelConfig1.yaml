@@ -28,12 +28,12 @@ cells:
     labelColor:
       gradientMode: "hue"
       thresholds:
-        - {color: "green", level: 0}
-        - {color: "orange", level: 500}
-        - {color: "red", level: 1000}
+        - {color: "green", level: 200}
+        - {color: "orange", level: 230}
+        - {color: "red", level: 250}
     link: *grafana-home
   db_transactions:
-    dataRef: "test-data-large-cos"
+    dataRef: "k8s_prod_pod_cpu_requested"
     label:
       separator: "cr"
       units: "ops"
@@ -42,8 +42,8 @@ cells:
       gradientMode: "hue"
       thresholds:
         - {color: "semi-dark-green", level: 0}
-        - {color: "orange", level: 400}
-        - {color: "red", level: 800}
+        - {color: "orange", level: 230}
+        - {color: "red", level: 250}
     link: *grafana-home
   start_rate:
     dataRef: "test-data-small-sin"
