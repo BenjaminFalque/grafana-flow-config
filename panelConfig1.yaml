@@ -36,7 +36,7 @@ cells:
     dataRef: "k8s_prod_pod_cpu_requested"
     label:
       separator: "cr"
-      units: "ops"
+      units: "Pods"
       decimalPoints: 0
     fillColor:
       gradientMode: "hue"
